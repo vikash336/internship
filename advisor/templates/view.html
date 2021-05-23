@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>View Adviser</h2>
+    <table>
+      <thead>
+        <th>Advisor name</th>
+        <th>Advisor ID</th>
+        <th>Booking Time</th>
+        <th>Booking time</th>
+      </thead>
+      {% for i in advis %}
+      <tr>
+        <td>{{i.adname}}</td>
+        <td>{{i.ad_id}}</td>
+        <td>{{i.bookingtime}}</td>
+        <td>{{i.bookid}}</td>
+        <td><a class="btn" href="/BRMapp/edit-book?bookid={{book.id}}">Make appionment</a></td>
+      </tr>
+      {% endfor %}
+
+  </body>
+</html>
